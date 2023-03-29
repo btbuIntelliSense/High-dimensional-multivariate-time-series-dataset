@@ -1,8 +1,8 @@
 # Datasets of the paper: Self-adaptive encode-decoder predictor via dual-attention mechanism and dual-graph module with global Bayesian optimization for high-dimensional multivariable time series.
-##The description of each dataset is as follows:
-###(1) Constituent Shares of the Shanghai Stock Exchange 50 Dataset (CSSSED)
+## The description of each dataset is as follows:
+### (1) Constituent Shares of the Shanghai Stock Exchange 50 Dataset (CSSSED)
 The CSSSED describes how the four price variables of the Constituent Shares of the Shanghai Stock Exchange 50 (000016) change over time. The dataset uses the 50 constituent stocks when the stock opens from May 2022 to August 2022, with 84-time points, and the variables include opening price, closing price, highest price, and lowest price. The 50 constituent stocks are subject to the announcement on August 31, 2022 by Eastmoney.com (https://www.eastmoney.com/). Since the constituent stocks of SSE 50 are adjusted every six months (January and July each year), the short-term prices of constituent stocks are more meaningful. The three-dimensional state of data can be expressed as (50, 84, 4). The total data volume (i.e.,  ) is 16800.
-###(2) Chinese Urban Air Quality Dataset (CUAQD)
+### (2) Chinese Urban Air Quality Dataset (CUAQD)
 The CUAQD describes in 100 cities in China in the first 21 days of March 2022, three variables including AQI, PM2.5, and PM2.5 24-hour moving average change over time. With 504-time points, the sampling frequency is 1 hour. There is a small number of missing values, and the KNN algorithm [65] (K=3) is used for interpolation. The three-dimensional state of data can be expressed as (100, 504, 3). The total data volume is 151200.
-###(3) PEMS-08
+### (3) PEMS-08
 The PEMS-08 describes traffic conditions detected by detectors deployed on highways in major metropolitan areas of California, USA. It has 170 detectors, the time is from July to August 2016 and the sampling frequency is 5 minutes (i.e., there are 17856-time points), considering three traffic measurements, namely total flow, average speed, and average occupancy. We used a subset of it in the main experiment, taking the amount of data from the previous four weeks(i.e., 8064-time points). The three-dimensional state of data can be expressed as (170, 8064, 3). The total data volume is 4112640.
